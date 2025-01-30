@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Import Custom Fonts */
+@font-face {
+    font-family: 'MainFont';
+    src: url('../font/dhf_story_brush/DHF_Story_Brush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Import the second font */
+@font-face {
+    font-family: 'SecondFont';
+    src: url('../font/dark_distance/Dark_Distance.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'ImpactFont';
+    src: url('../font/blood_lust/BloodLust.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HotEffectFont';
+    src: url('../font/flamer/FLAMER.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Body Styling */
+body {
+    font-family: 'MainFont', sans-serif; /* Main Font for the entire page */
+    background: #333;
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+}
+/* Apply Custom Font to Lyrics in <pre> */
+.lyrics {
+    font-family: 'MainFont', sans-serif !important;  /* Force Custom Font */
+    font-size: 1.6rem;
+    color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ff4500;
+}
+/* Apply the second font to the second half */
+.second-half {
+    font-family: 'SecondFont', sans-serif;
+    color: #f8f8f8; /* Optional: Change text color */
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.hot-effect {
+    font-family: 'HotEffectFont', cursive; /* Custom font for "hot" */
+    color: orange;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.blood-effect {
+    font-family: 'ImpactFont', cursive; /* Custom font for "blood just get to gushing" */
+    color: darkred;
+    font-weight: bold;
+
+}
+
+mark {
+    background-color: transparent; /* Removes the default yellow highlight */
+    color: #d411ba; /* Change this to your preferred text color */
+}
+
+
+
+/* Header Styling */
+.header {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Center everything initially */
+    background-color: #ff4500;
+    padding: 15px 20px;
+    color: white;
+    position: relative; /* Allows positioning for absolute elements */
+}
+
+/* Logo Styling */
+.header img {
+    width: 80px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position it absolutely within the header */
+    left: 20px; /* Move logo to the left */
+}
+
+/* Header Title Styling */
+.header h1 {
+    font-size: 2rem;
+    font-family: 'MainFont', sans-serif;
+    margin: 0; /* Removes default margin */
+    text-align: center; /* Centers the text */
+    flex-grow: 1; /* Allows the text to take available space */
+}
+/* Album Art */
+.album-art {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.album-image {
+    width: 300px;
+    border: 5px solid #ff4500;
+}
+
+/* Lyrics Section */
+.lyrics-section {
+    padding: 20px;
+    background-color: #222;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.lyrics-section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+
+/* Music Video Section */
+.music-video {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #111;
+    border: 3px solid #ff4500;
+    border-radius: 10px;
+}
+
+.music-video h2 {
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+}
